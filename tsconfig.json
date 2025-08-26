@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    /* Configuración básica */
+    "target": "ES2020",                        // Versión de JS a generar
+  "module": "NodeNext",                      // Para Node.js
+    "rootDir": "src",                          // Carpeta del código fuente
+    "outDir": "dist",                          // Carpeta de salida compilada
+
+    /* Seguridad y consistencia */
+    "strict": true,                            // Activa todas las verificaciones estrictas
+    "esModuleInterop": true,                   // Permite import default en CommonJS
+    "forceConsistentCasingInFileNames": true,  // Respeta mayúsculas/minúsculas en imports
+    "skipLibCheck": true,                      // Evita errores en librerías externas
+
+    /* Depuración */
+    "sourceMap": true,                         // Genera mapas de código para debug
+    "inlineSources": true,                     // Incluye los sources en el sourcemap
+    "moduleResolution": "nodenext",            // Permite resolver módulos ES y CommonJS
+  },
+  "include": ["src"],                          // Compilar solo lo que está en src
+  "exclude": ["node_modules", "dist"]          // Ignorar dependencias y build
+}
