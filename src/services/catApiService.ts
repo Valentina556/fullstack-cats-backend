@@ -27,7 +27,6 @@ export async function searchBreeds(query: string) {
 }
 
 export async function getImagesByBreedId(breedId: string, limit = 8) {
-  // images/search?breed_id={id}&limit={n}
   const res = await api.get("/images/search", { params: { breed_id: breedId, limit } });
-  return res.data; // array of image objects (incluye url)
+  return res.data; 
 }
